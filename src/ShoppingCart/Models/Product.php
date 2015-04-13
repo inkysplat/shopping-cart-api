@@ -23,11 +23,20 @@ class Product implements ProductInterface
         $this->product = $product;
     }
 
+    /**
+     * Will return the Product's name
+     *
+     * @return string
+     */
     public function getName()
     {
         return $this->product->getName();
     }
 
+    /**
+     * Will return the Product's Price
+     * @return double
+     */
     public function getPrice()
     {
         return $this->product->getPrice();

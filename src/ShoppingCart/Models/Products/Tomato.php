@@ -1,11 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adamnicholls
- * Date: 13/04/15
- * Time: 18:08
- */
 
+namespace src\ShoppingCart\Models\Products;
+
+/**
+ * Class Tomato
+ * @package src\ShoppingCart\Models\Products
+ */
 class Tomato {
 
 } 

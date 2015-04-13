@@ -19,7 +19,9 @@ class Cart implements CartInterface
      * @return string
      */
 
-    public function getTotalSum();
+    public function getTotalSum(){
+
+    }
 
     /**
      * Add an item to the shopping cart
@@ -30,7 +32,9 @@ class Cart implements CartInterface
      * @return void
      */
 
-    public function addItem(Product $product, $amount);
+    public function addItem(Product $product, $amount){
+
+    }
 
     /**
      * Get the price of the product depending on how many are
@@ -45,5 +49,7 @@ class Cart implements CartInterface
      * @return float The price of $product
      */
 
-    public function getPriceOf(Product $product);
+    public function getPriceOf(Product $product){
+
+    }
 } 

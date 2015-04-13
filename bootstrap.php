@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adamnicholls
- * Date: 13/04/15
- * Time: 18:12
- */ 
+
+define('ROOT_PATH', realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
+
+require_once ROOT_PATH . 'src/ShoppingCart/Interfaces/CartInterface.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Interfaces/ProductsInterface.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Models/Products/Lemon.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Models/Products/Orange.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Models/Products/Tomato.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Models/Product.php';
+require_once ROOT_PATH . 'src/ShoppingCart/ProductFactory.php';
+require_once ROOT_PATH . 'src/ShoppingCart/Cart.php';
