@@ -22,7 +22,6 @@ class CartTest extends PHPUnit_Framework_TestCase
         $cart = new \src\ShoppingCart\Cart();
         $cart->addItem($product, 25);
         $price = $cart->getTotalSum();
-        var_dump($price);
         $this->assertEquals($price, 4.90);
     }
 

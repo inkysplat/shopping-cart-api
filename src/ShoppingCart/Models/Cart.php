@@ -46,11 +46,12 @@ class Cart implements CartInterface
                 if($quantity > $price->getUpper()){
                     $q = $price->getUpper();
                 }
-                $cost =+ ($quantity * $price->getPrice());
+                var_dump([$q, $price->getPrice()]);
+                $cost =+ ($q * $price->getPrice());
                 $quantity = $quantity - $price->getUpper();
             }
         }
-        return number_format($cost, 2);
+        return $cost;
     }
 
     /**
@@ -130,9 +131,8 @@ class Cart implements CartInterface
     public function getPriceOf(Product $product)
     {
         $product = $this->getProductName($product);
-        return $this->getProductPrices($product)->getPrice(
-            $this->getProductQuantity($product)
-        );
+        $quantity = $this->getProductQuantity($product);
+        return $this->getProductPrices($product)->getPrice($quantity)->getPrice();
     }
 
 } 
