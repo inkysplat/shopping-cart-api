@@ -6,6 +6,9 @@ use \src\ShoppingCart\Interfaces\ProductInterface;
 
 /**
  * Class Product
+ *
+ * This acts like a Proxy for the Orange, Lemon, Tomato, etc.
+ *
  * @package src\ShoppingCart\Models
  */
 class Product implements ProductInterface
