@@ -1,0 +1,15 @@
+{
+    "name": "inkysplat/privax",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Adam Nicholls",
+            "email": "inkysplat@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "~4.6"
+    }
+}
