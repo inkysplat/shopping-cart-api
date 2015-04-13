@@ -40,15 +40,16 @@ class Cart implements CartInterface
         $cost = 0.00;
         foreach ($this->cart as $product => $quantity) {
             $quantity = $this->getProductQuantity($product);
-            while($quantity > 0) {
-                $price = $this->getProductPrices($product)->getPrice($quantity);
-                $q = $quantity;
-                if($quantity > $price->getUpper()){
-                    $q = $price->getUpper();
+            $prices = $this->getProductPrices($product)->getPrices();
+            foreach($prices as $price) {
+                if($quantity >= $price->getLower() && $quantity  <= $price->getUpper()) {
+                    $q = $quantity;
+                    if($q > $price->getUpper()){
+                        $q = $price->getUpper();
+                    }
+                    $cost = +($q * $price->getPrice());
+
                 }
-                var_dump([$q, $price->getPrice()]);
-                $cost =+ ($q * $price->getPrice());
-                $quantity = $quantity - $price->getUpper();
             }
         }
         return $cost;

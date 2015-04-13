@@ -59,6 +59,14 @@ class PriceTiers
     }
 
     /**
+     * @return array
+     */
+    public function getPrices()
+    {
+        return $this->prices;
+    }
+
+    /**
      * Will Calculate the appropriate Price for you based on Quantity Amount
      *
      * @param integer $quantity

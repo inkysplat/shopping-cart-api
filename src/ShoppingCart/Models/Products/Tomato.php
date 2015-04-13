@@ -18,9 +18,9 @@ class Tomato implements ProductInterface
     public function getPrice()
     {
         return [
-            [0, 19, 0.20],
+            [100, -1, 0.14],
             [20, 99, 0.18],
-            [100, -1, 0.14]
+            [0, 19, 0.20]
         ];
     }
 
