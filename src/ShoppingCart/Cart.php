@@ -8,6 +8,9 @@
 
 namespace src\ShoppingCart;
 
+use \src\ShoppingCart\Interfaces\CartInterface;
+use \src\ShoppingCart\Models\Product;
+
 /**
  * Class Cart
  * @package src\ShoppingCart

@@ -2,6 +2,8 @@
 
 namespace src\ShoppingCart\Interfaces;
 
+use \src\ShoppingCart\Models\Product;
+
 /**
  * Interface CartInterface
  * @package src\ShoppingCart\Interfaces

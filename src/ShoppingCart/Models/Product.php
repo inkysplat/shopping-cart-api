@@ -2,7 +2,7 @@
 
 namespace src\ShoppingCart\Models;
 
-use \src\ShoppingCart\Interfaces;
+use \src\ShoppingCart\Interfaces\ProductInterface;
 
 /**
  * Class Product
@@ -42,5 +42,13 @@ class Product implements ProductInterface
         return $this->product->getPrice();
     }
 
+    /**
+     * Will fool anything looking in-ward that we're a Product Entity
+     * @return string
+     */
+    public function __toString()
+    {
+        return get_class($this);
+    }
 
 } 
