@@ -12,6 +12,8 @@ class Orange implements ProductInterface
 {
 
     /**
+     * Price Points Formatted as
+     * [$lower, $upper, $price]
      * @return array|float
      */
     public function getPrice()

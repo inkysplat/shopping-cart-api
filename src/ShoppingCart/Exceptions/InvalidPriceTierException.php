@@ -2,10 +2,10 @@
 namespace src\ShoppingCart\Exceptions;
 
 /**
- * Class InvalidProductException
+ * Class InvalidPriceTierException
  * @package src\ShoppingCart\Exceptions
  */
-class InvalidProductException extends \Exception
+class InvalidPriceTierException extends \Exception
 {
     /**
      * @param string $message

@@ -11,6 +11,8 @@ use src\ShoppingCart\Interfaces\ProductInterface;
 class Lemon implements ProductInterface
 {
     /**
+     * Price Points Formatted as
+     * [$lower, $upper, $price]
      * @return array|float
      */
     public function getPrice()
