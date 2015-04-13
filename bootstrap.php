@@ -2,6 +2,8 @@
 
 define('ROOT_PATH', realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
 
+require_once ROOT_PATH . 'vendor/autoload.php';
+
 require_once ROOT_PATH . 'src/ShoppingCart/Exceptions/InvalidProductException.php';
 require_once ROOT_PATH . 'src/ShoppingCart/Interfaces/ProductInterface.php';
 require_once ROOT_PATH . 'src/ShoppingCart/Interfaces/CartInterface.php';

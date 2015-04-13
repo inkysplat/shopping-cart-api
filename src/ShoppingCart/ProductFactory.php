@@ -43,7 +43,7 @@ class ProductFactory
                 break;
 
             default:
-                throw new InvalidProductException();
+                throw new InvalidProductException("Unable to Create Product, Doesn't Exist.");
                 break;
         }
     }

@@ -10,6 +10,7 @@
         }
     ],
     "require": {
-        "phpunit/phpunit": "~4.6"
+        "phpunit/phpunit": "~4.6",
+        "mockery/mockery": "0.9.*"
     }
 }
